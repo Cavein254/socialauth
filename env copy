@@ -1,0 +1,3 @@
+POSTGRES_DB=enteryourdbname
+POSTGRES_USER=enterdbusername
+POSTGRES_PASSWORD=enterdbuserpassword
