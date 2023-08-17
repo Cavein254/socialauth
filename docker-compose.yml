@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  db:
+    image: bitnami/postgresql:15
+    container_name: fastapi_socialauth_db
+    restart: always
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    networks:
+      - fastapinet
+
+  app:
+    image: fastapiapp
+    container_name: fastapi_socialauth_app
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/home
+    depends_on:
+      - db
+    networks:
+      - fastapinet
+
+networks:
+  fastapinet:
