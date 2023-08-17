@@ -1,3 +1,5 @@
 POSTGRES_DB=enteryourdbname
 POSTGRES_USER=enterdbusername
 POSTGRES_PASSWORD=enterdbuserpassword
+POSTGRES_HOST=enterdbuserhost
+POSTGRES_PORT=enterdbuserport
