@@ -13,7 +13,7 @@ services:
       - fastapinet
 
   app:
-    image: fastapiapp
+    image: cave/socialappauth:01
     container_name: fastapi_socialauth_app
     ports:
       - 8000:8000
